@@ -14,7 +14,5 @@ export const onChangePage = page => {
     if(page === PAGES.CREATE_PIC) return (CREATE_PIC.className = "d-block");
     if(page === PAGES.LOGIN) return (LOGIN.className = "d-block");
     if(page === PAGES.SIGNUP) return (SIGNUP.className = "d-block");
-    
-    return (ERROR_404.className = "d-block");
-    
+    ERROR_404.className = "d-block";
 };
