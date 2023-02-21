@@ -22,15 +22,4 @@ credits: "shula zaken",
     },
 ];
 
-let counter = setCounter(pictures, 0); //0
-renderSlider(pictures, counter);
-
-SLIDER_NEXT_BTN.addEventListener(
-"click",
-() => (counter = onChangePageSliderPic(pictures, counter, "next"))
-);
-
-SLIDER_PREV_BTN.addEventListener(
-"click",
-() => (counter = onChangePageSliderPic(pictures, counter, "prev"))
-);
+renderSlider(pictures, 0);
