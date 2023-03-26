@@ -1,4 +1,4 @@
-import Picture from "../pictures/models/Picture.js";
+import Picture from "../pictures/models/picture.js";
 import User from "../users/models/user.js";
 
 const initialData = () => {
