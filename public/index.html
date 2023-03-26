@@ -1,210 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-    rel="shortcut icon" 
-    href="./assets/images/pic-icon.png" 
-    type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <script
-        defer
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./assets/images/pic-icon.png"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
 
-    <script src="../src/app.js" type="module"></script>
+		<script src="../src/app.js" type="module"></script>
 
-    <title>SLIDESHOW - app</title>
-</head>
+		<title>SLIDESHOW - app</title>
+	</head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
-            <div class="container">
-                
-                <span id="home-page-link" class="navbar-brand cursor">Slideshow</span>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+				<div class="container">
+					<span id="home-page-link" class="navbar-brand cursor">Slideshow</span>
 
-                <button  
-                    class="navbar-toggler collapsed" 
-                    type="button" 
-                    data-bs-target="#navbarColor01" 
-                    data-bs-toggle="collapse" 
-                    aria-expanded="false" 
-                    aria-controls="navbarColor01" 
-                    aria-label="Toggle navigation"
-                    >
-                    <i class="bi bi-list"></i>
-                </button>
+					<button
+						class="navbar-toggler collapsed"
+						type="button"
+						data-bs-target="#navbarColor01"
+						data-bs-toggle="collapse"
+						aria-expanded="false"
+						aria-controls="navbarColor01"
+						aria-label="Toggle navigation"
+					>
+						<i class="bi bi-list"></i>
+					</button>
 
-                <div class="collapse navbar-collapse d-flex-md justify-content-between" id="navbarColor01">
-                    <div>
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <span id="about-page-link" class="nav-link cursor" aria-current="page">About</span>
-                            </li>
-                            <li class="nav-item">
-                            <span id="create-pic-link" class="nav-link cursor" aria-current="page">Add Pic</span>
-                            </li>
-                        </ul>
-                    </div>
+					<div
+						class="collapse navbar-collapse d-flex-md justify-content-between"
+						id="navbarColor01"
+					>
+						<div>
+							<ul class="navbar-nav mb-2 mb-lg-0">
+								<li class="nav-item">
+									<span
+										id="about-page-link"
+										class="nav-link cursor"
+										aria-current="page"
+										>About</span
+									>
+								</li>
+								<li class="nav-item">
+									<span
+										id="create-pic-link"
+										class="nav-link cursor"
+										aria-current="page"
+										>Add Pic</span
+									>
+								</li>
+							</ul>
+						</div>
 
-                    <div>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <span id="sign-up-link" class="nav-link cursor" aria-current="page">Sign up!</span>
-                            </li>
+						<div>
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<span
+										id="sign-up-link"
+										class="nav-link cursor"
+										aria-current="page"
+										>Sign up!</span
+									>
+								</li>
 
-                            <li class="nav-item">
-                                <span id="login-page-link" class="nav-link cursor" aria-current="page">Login</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav></header>
+								<li class="nav-item">
+									<span
+										id="login-page-link"
+										class="nav-link cursor"
+										aria-current="page"
+										>Login</span
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
 
+		<main>
+			<!-- Home Page -->
+			<div id="home-page" class="d-block">
+				<div class="container">
+					<div class="center">
+						<div class="col-12 col-md-10 col-xl-8">
+							<h1 class="display-4">HOME PAGE</h1>
+							<h2 class="fs-5">Here you can look at your pictures...</h2>
+							<hr />
+						</div>
+					</div>
+					<!-- The Slideshow -->
+					<div id="slider-container">
+						<div class="center">
+							<div class="col-12 col-md-10 col-xl-8">
+								<figure>
+									<img
+										id="slider-image"
+										src="https://images.pexels.com/photos/2832251/pexels-photo-2832251.jpeg?auto=compress&cs=tinysrgb&w=400"
+										alt="Van"
+										class="slide-show-img bg-dark p-2"
+									/>
+									<figcaption>
+										Photographer:
+										<span id="slider-credits">Michael Jordan</span>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
 
-        <main>
-            <!-- Home Page -->
-            <div id="home-page" class="d-block">
-                <div class="container">
-                    <div class="center">
-                        <div class="col-12 col-md-10 col-xl-8">
-                        <h1  class="display-4">HOME PAGE</h1>
-                        <h2 class="fs-5">Here you can look at your pictures...</h2>
-                        <hr />
-                        </div>
-                    </div>
-                    <!-- The Slideshow -->
-                    <div id="slider-container">
-                        <div class="center">
-                            <div class="col-12 col-md-10 col-xl-8">
-                                <figure>
-                                    <img 
-                                    id="slider-image"
-                                    src="https://images.pexels.com/photos/2832251/pexels-photo-2832251.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Van" 
-                                    class="slide-show-img bg-dark p-2"
-                                    /> 
-                                    <figcaption>
-                                        Photographer:  
-                                        <span id="slider-credits">Michael Jordan</span>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        
-                        <div class="center mb-2">
-                            <div class="d-flex justify-content-between col-5 col-md-6 col-xl-4">
-                                <!-- Prev Button -->
-                                <div id="slider-prev-btn" class="btn btn-outline-dark mx-2">
-                                    Prev
-                                </div>
-                                <!-- Next Button -->
-                                <div id="slider-next-btn" class="btn btn-outline-dark mx-2">
-                                    Next
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- About Page -->
-            <div id="about-page" class="d-none">
-                <div class="container">
-                    <div class="center">
-                        <div class="col-12 col-md-10 col-xl-8">
-                        <h1  class="display-4">ABOUT PAGE</h1>
-                        <h2 class="fs-5">Here you can look at your pictures...</h2>
-                        <hr />
-                        </div>
-                    </div>
-                    <p>About Page content</p>
-                </div>
-            </div>
-            <!-- Create Pic Page -->
-            <div id="create-pic-page" class="d-none">
-                <div class="container">
-                    <div class="center">
-                        <div class="col-12 col-md-10 col-xl-8">
-                        <h1  class="display-4">CREATE PIC PAGE</h1>
-                        <h2 class="fs-5">Here you can add your pictures!</h2>
-                        <hr />
-                        </div>
-                    </div>
-                    <p>Create Picture Page -image-</p>
-                </div>
-            </div>
-            <!-- Login Page -->
-            <div id="login-page" class="d-none">
-                <div class="container">
-                    <div class="center">
-                        <div class="col-12 col-md-10 col-xl-8">
-                        <h1  class="display-4">Login</h1>
-                        <h2 class="fs-5">It's good to see you again!</h2>
-                        <hr />
-                        </div>
-                    </div>
-                    <div id="login-form">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Remember Me.</label>
-                            </div>
-                            <button type="submit" class="btn btn-secondary">Login</button>
-                        </form>
-                    </div>
-                    <p>*login page*</p>
-                </div>
-            </div>
-            <!-- Sign Up Page -->
-            <div id="signup-page" class="d-none">
-                <div class="container">
-                    <div class="center">
-                        <div class="col-12 col-md-10 col-xl-8">
-                            <h1  class="display-4">Sign up</h1>
-                            <h2 class="fs-5">Here:</h2>
-                            <hr />
-                        </div>
-                    </div>
-                    <p>NAVVBAR</p>
-                </div>
-            </div>
-            <!-- Error Page -->
-            <div id="error-page" class="d-none">
-                <div class="container">
-                    <div class="center">
-                        <div class="col-12 col-md-10 col-xl-8">
-                            <h1  class="display-4">ERROR 404</h1>
-                            <h2 class="fs-5">PAGE WAS NOT FOUND.</h2>
-                            <hr />
-                        </div>
-                    </div>
-                    <p>ERROR: 404</p>
-                    <p id="return-to-home-page-link" class="cursor">Click here to return to the hom page...
-                    </p>
-                </div>
-            </div>
-        </main>
+						<div class="center mb-2">
+							<div
+								class="d-flex justify-content-between col-5 col-md-6 col-xl-4"
+							>
+								<!-- Prev Button -->
+								<div id="slider-prev-btn" class="btn btn-outline-dark mx-2">
+									Prev
+								</div>
+								<!-- Next Button -->
+								<div id="slider-next-btn" class="btn btn-outline-dark mx-2">
+									Next
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- About Page -->
+			<div id="about-page" class="d-none">
+				<div class="container">
+					<div class="center">
+						<div class="col-12 col-md-10 col-xl-8">
+							<h1 class="display-4">ABOUT PAGE</h1>
+							<h2 class="fs-5">Here you can look at your pictures...</h2>
+							<hr />
+						</div>
+					</div>
+					<p>About Page content</p>
+				</div>
+			</div>
+			<!-- Create Pic Page -->
+			<div id="create-pic-page" class="d-none">
+				<div class="container">
+					<div class="center">
+						<div class="col-12 col-md-10 col-xl-8">
+							<h1 class="display-4">CREATE PIC PAGE</h1>
+							<h2 class="fs-5">Here you can add your pictures!</h2>
+							<hr />
+							<form
+								class="form mb-2 col-12 col-md-10 col-xl-8 border bg-danger"
+								style="min-width: 200; max-width: 800"
+							></form>
+						</div>
+					</div>
+					<p>Create Picture Page -image-</p>
+				</div>
+			</div>
+			<!-- Login Page -->
+			<div id="login-page" class="d-none">
+				<div class="container">
+					<div class="center">
+						<div class="col-12 col-md-10 col-xl-8">
+							<h1 class="display-4">Login</h1>
+							<h2 class="fs-5">It's good to see you again!</h2>
+							<hr />
+						</div>
+					</div>
+					<div id="login-form">
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label"
+									>Email address</label
+								>
+								<input
+									type="email"
+									class="form-control"
+									id="exampleInputEmail1"
+									aria-describedby="emailHelp"
+								/>
+								<div id="emailHelp" class="form-text">
+									We'll never share your email with anyone else.
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label"
+									>Password</label
+								>
+								<input
+									type="password"
+									class="form-control"
+									id="exampleInputPassword1"
+								/>
+							</div>
+							<div class="mb-3 form-check">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="exampleCheck1"
+								/>
+								<label class="form-check-label" for="exampleCheck1"
+									>Remember Me.</label
+								>
+							</div>
+							<button type="submit" class="btn btn-secondary">Login</button>
+						</form>
+					</div>
+					<p>*login page*</p>
+				</div>
+			</div>
+			<!-- Sign Up Page -->
+			<div id="signup-page" class="d-none">
+				<div class="container">
+					<div class="center">
+						<div class="col-12 col-md-10 col-xl-8">
+							<h1 class="display-4">Sign up</h1>
+							<h2 class="fs-5">Here:</h2>
+							<hr />
+						</div>
+					</div>
+					<p>NAVVBAR</p>
+				</div>
+			</div>
+			<!-- Error Page -->
+			<div id="error-page" class="d-none">
+				<div class="container">
+					<div class="center">
+						<div class="col-12 col-md-10 col-xl-8">
+							<h1 class="display-4">ERROR 404</h1>
+							<h2 class="fs-5">PAGE WAS NOT FOUND.</h2>
+							<hr />
+						</div>
+					</div>
+					<p>ERROR: 404</p>
+					<p id="return-to-home-page-link" class="cursor">
+						Click here to return to the hom page...
+					</p>
+				</div>
+			</div>
+		</main>
 
-
-        <footer class="border-top pt-3 bg-dark center">
-            <p class="text-light">Created by Jonathan Klein &copy; </p>
-        </footer>
-</body>
+		<footer class="border-top pt-3 bg-dark center">
+			<p class="text-light">Created by Jonathan Klein &copy;</p>
+		</footer>
+	</body>
 </html>
