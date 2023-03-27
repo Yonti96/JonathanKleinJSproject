@@ -107,7 +107,7 @@
 				<div class="container">
 					<div class="center">
 						<div class="col-12 col-md-10 col-xl-8">
-							<h1 class="display-4">HOME PAGE</h1>
+							<h1 class="display-4 text-center">HOME PAGE</h1>
 							<h2 class="fs-5">Here you can look at your pictures...</h2>
 							<hr />
 						</div>
@@ -124,7 +124,7 @@
 										class="slide-show-img bg-dark p-2"
 									/>
 									<figcaption>
-										Photographer:
+										Photographer by:
 										<span id="slider-credits">...</span>
 									</figcaption>
 								</figure>
@@ -164,18 +164,76 @@
 			<!-- Create Pic Page -->
 			<div id="create-pic-page" class="d-none">
 				<div class="container">
-					<div class="center">
+					<div class="center" style="height: 87vh">
 						<div class="col-12 col-md-10 col-xl-8">
-							<h1 class="display-4">CREATE PIC PAGE</h1>
-							<h2 class="fs-5">Here you can add your pictures!</h2>
-							<hr />
 							<form
-								class="form mb-2 col-12 col-md-10 col-xl-8 border bg-danger"
-								style="min-width: 200; max-width: 800"
-							></form>
+								class="form p-2 col-12 col-md-6 col-xl-4 border rounded"
+								style="min-width: 280px"
+							>
+								<h1 class="text-center fs-5">CREATE NEW PICTURE</h1>
+								<div>
+									<label for="create-pic-url">Source</label>
+									<input
+										id="create-pic-url"
+										type="text"
+										class="form-control mb-2"
+										name="url"
+										autocomplete="off"
+									/>
+									<span id="create-pic-url-error" class="text-danger"></span>
+								</div>
+								<div>
+									<label for="create-pic-alt">Description</label>
+									<input
+										id="create-pic-alt"
+										type="text"
+										class="form-control mb-2"
+										name="alt"
+										autocomplete="off"
+									/>
+									<span id="create-pic-alt-error" class="text-danger"></span>
+								</div>
+								<div>
+									<label for="create-pic-credits">Credits</label>
+									<input
+										id="create-pic-credits"
+										type="text"
+										class="form-control mb-2"
+										name="credits"
+										autocomplete="off"
+									/>
+									<span
+										id="create-pic-credits-error"
+										class="text-danger"
+									></span>
+								</div>
+								<div>
+									<label for="create-pic-price">Price</label>
+									<input
+										id="create-pic-price"
+										type="number"
+										class="form-control mb-2"
+										name="price"
+										autocomplete="off"
+									/>
+									<span id="create-pic-price-error" class="text-danger"></span>
+								</div>
+								<input
+									id="create-pic-cancel-btn"
+									type="button"
+									value="cancel"
+									class="btn btn-secondary col-12 mb-2"
+								/>
+								<input
+									id="create-pic-submit-btn"
+									type="button"
+									value="submit"
+									class="btn btn-primary col-12 mb-2"
+									disabled
+								/>
+							</form>
 						</div>
 					</div>
-					<p>Create Picture Page -image-</p>
 				</div>
 			</div>
 			<!-- Login Page -->

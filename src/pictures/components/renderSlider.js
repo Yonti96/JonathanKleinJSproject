@@ -15,7 +15,6 @@ SLIDER_NEXT_BTN.addEventListener(
 	"click",
 	() => (counter = onChangeSliderPic(pictures, counter, "next"))
 );
-
 SLIDER_PREV_BTN.addEventListener(
 	"click",
 	() => (counter = onChangeSliderPic(pictures, counter, "prev"))

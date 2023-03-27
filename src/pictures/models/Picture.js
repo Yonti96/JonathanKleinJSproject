@@ -7,16 +7,16 @@ class Picture {
 	credits;
 	#price;
 	#createdAt;
-	like = [];
+	likes = [];
 	category;
 	#user_id;
 
-	constructor(picture) {
+	constructor(picture, pictures = []) {
 		const { url, alt, credits, price, category, user_id } = picture;
 		if (!url || !alt || !credits || !price || !user_id)
 			throw new Error("Bad Request!");
 
-		this.#id = generateUniqId(picture, 1_000_000, 9_999_999);
+		this.#id = generateUniqId(pictures, 1_000_000, 9_999_999);
 		this.url = url;
 		this.alt = alt;
 		this.credits = credits;
@@ -38,38 +38,29 @@ class Picture {
 		return this.#price;
 	}
 
-	set price({ newPrice, user }) {
-		if (user._id !== this.#user_id)
-			throw new Error(
-				"only user that uploaded this card can change it's price!"
-			);
-		this.price = newPrice;
-	}
-
 	get user_id() {
 		return this.#user_id;
 	}
 }
 
 // try {
-// 	const pic = new Picture({
-// 		url: "dd",
-// 		alt: "ff",
-// 		credits: "kk",
-// 		price: 5_000_000,
-// 		category: "tt",
-// 		user_id: "jjjj123",
-// 	});
+//   const pic = new Picture({
+//     url: "ff",
+//     alt: "dd",
+//     credits: "xx",
+//     price: 5_000,
+//     user_id: "ddd545d",
+//     category: "school",
+//   });
 
-// 	console.log(pic);
+//   console.log(pic);
 // } catch (error) {
-// 	error.status = 400;
-// 	console.dir(error);
+//   error.status = 400;
+//   //   console.dir(error);
 
-// 	if (error.status >= 400) console.log("error blah blah");
-
-// 	// console.log(error.message);
-// 	// console.log(error.status);
+//   if (error.status >= 400) console.log("error bla bla");
+//   //   console.log(error.message);
+//   //   console.log(error.status);
 // }
 
 export default Picture;

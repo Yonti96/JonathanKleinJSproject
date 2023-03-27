@@ -1,5 +1,5 @@
-import Picture from "../pictures/models/picture.js";
-import User from "../users/models/user.js";
+import Picture from "../pictures/models/Picture.js";
+import User from "../users/models/User.js";
 
 const initialData = () => {
 	const database = {
@@ -8,16 +8,22 @@ const initialData = () => {
 				url: "https://cdn.pixabay.com/photo/2023/01/31/05/59/zebra-7757193_960_720.jpg",
 				alt: "zebra",
 				credits: "Jessica rabbit",
+				price: 1_000,
+				user_id: "123456",
 			},
 			{
 				url: "https://cdn.pixabay.com/photo/2023/01/23/09/26/cat-7738210_960_720.jpg",
 				alt: "cat",
 				credits: "hillary clinton",
+				price: 2_000,
+				user_id: "123456",
 			},
 			{
 				url: "https://cdn.pixabay.com/photo/2023/01/27/06/17/pheasant-7747830_960_720.jpg",
 				alt: "pigeon",
 				credits: "shula zaken",
+				price: 3_000,
+				user_id: "123456",
 			},
 		],
 		users: [
@@ -80,6 +86,7 @@ const initialData = () => {
 			return new Picture(picture, pictures);
 		});
 
+		// const users = null;
 		const users = database.users.map((user) => {
 			console.log(user);
 			return new User(user, []);
